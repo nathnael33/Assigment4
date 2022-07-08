@@ -1,0 +1,11 @@
+C:\Users\nathn\source\repos\Assigment4\Assigment4\bin\Debug\Assigment4.exe.config
+C:\Users\nathn\source\repos\Assigment4\Assigment4\bin\Debug\Assigment4.exe
+C:\Users\nathn\source\repos\Assigment4\Assigment4\bin\Debug\Assigment4.pdb
+C:\Users\nathn\source\repos\Assigment4\Assigment4\obj\Debug\Assigment4.csproj.AssemblyReference.cache
+C:\Users\nathn\source\repos\Assigment4\Assigment4\obj\Debug\Assigment4.csproj.SuggestedBindingRedirects.cache
+C:\Users\nathn\source\repos\Assigment4\Assigment4\obj\Debug\Assigment4.Form1.resources
+C:\Users\nathn\source\repos\Assigment4\Assigment4\obj\Debug\Assigment4.Properties.Resources.resources
+C:\Users\nathn\source\repos\Assigment4\Assigment4\obj\Debug\Assigment4.csproj.GenerateResource.cache
+C:\Users\nathn\source\repos\Assigment4\Assigment4\obj\Debug\Assigment4.csproj.CoreCompileInputs.cache
+C:\Users\nathn\source\repos\Assigment4\Assigment4\obj\Debug\Assigment4.exe
+C:\Users\nathn\source\repos\Assigment4\Assigment4\obj\Debug\Assigment4.pdb
