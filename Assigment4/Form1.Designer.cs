@@ -42,6 +42,8 @@
             this.btn_Cancel = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_number
@@ -93,7 +95,7 @@
             // 
             this.text_ObjectName.Location = new System.Drawing.Point(76, 266);
             this.text_ObjectName.Name = "text_ObjectName";
-            this.text_ObjectName.Size = new System.Drawing.Size(291, 22);
+            this.text_ObjectName.Size = new System.Drawing.Size(217, 22);
             this.text_ObjectName.TabIndex = 5;
             this.text_ObjectName.TextChanged += new System.EventHandler(this.text_ObjectName_TextChanged);
             // 
@@ -101,7 +103,7 @@
             // 
             this.lbl_Count.AutoSize = true;
             this.lbl_Count.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.8F);
-            this.lbl_Count.Location = new System.Drawing.Point(84, 364);
+            this.lbl_Count.Location = new System.Drawing.Point(678, 190);
             this.lbl_Count.Name = "lbl_Count";
             this.lbl_Count.Size = new System.Drawing.Size(109, 39);
             this.lbl_Count.TabIndex = 6;
@@ -109,7 +111,7 @@
             // 
             // txt_Count
             // 
-            this.txt_Count.Location = new System.Drawing.Point(91, 422);
+            this.txt_Count.Location = new System.Drawing.Point(685, 277);
             this.txt_Count.Name = "txt_Count";
             this.txt_Count.Size = new System.Drawing.Size(100, 22);
             this.txt_Count.TabIndex = 7;
@@ -117,7 +119,7 @@
             // 
             // txt_price
             // 
-            this.txt_price.Location = new System.Drawing.Point(453, 408);
+            this.txt_price.Location = new System.Drawing.Point(460, 277);
             this.txt_price.Name = "txt_price";
             this.txt_price.Size = new System.Drawing.Size(100, 22);
             this.txt_price.TabIndex = 8;
@@ -127,7 +129,7 @@
             // 
             this.lbl_Price.AutoSize = true;
             this.lbl_Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.8F);
-            this.lbl_Price.Location = new System.Drawing.Point(446, 347);
+            this.lbl_Price.Location = new System.Drawing.Point(463, 190);
             this.lbl_Price.Name = "lbl_Price";
             this.lbl_Price.Size = new System.Drawing.Size(97, 39);
             this.lbl_Price.TabIndex = 9;
@@ -136,7 +138,7 @@
             // btn_Add
             // 
             this.btn_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.8F);
-            this.btn_Add.Location = new System.Drawing.Point(80, 545);
+            this.btn_Add.Location = new System.Drawing.Point(121, 380);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(116, 46);
             this.btn_Add.TabIndex = 10;
@@ -147,7 +149,7 @@
             // btn_Cancel
             // 
             this.btn_Cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.8F);
-            this.btn_Cancel.Location = new System.Drawing.Point(441, 545);
+            this.btn_Cancel.Location = new System.Drawing.Point(484, 380);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(162, 46);
             this.btn_Cancel.TabIndex = 11;
@@ -173,11 +175,23 @@
             this.textBox1.TabIndex = 13;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 448);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1113, 306);
+            this.dataGridView1.TabIndex = 14;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 752);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_Cancel);
@@ -195,6 +209,7 @@
             this.Name = "Form1";
             this.Text = "la";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,6 +231,7 @@
         private System.Windows.Forms.Button btn_Cancel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 

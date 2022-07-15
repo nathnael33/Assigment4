@@ -13,7 +13,6 @@ namespace Assigment4
     public partial class Form1 : Form
     {
 
-        Model obj = new Model();
         public Form1()
         {
             InitializeComponent();
@@ -32,19 +31,23 @@ namespace Assigment4
         private void btn_Add_Click(object sender, EventArgs e)
         {
 
+            Model obj = new Model();
             obj.Number = txt_Number.Text;
             obj.price = txt_price.Text;
             obj.Object_name = text_ObjectName.Text;
             obj.count = txt_Count.Text;
             obj.date = dateTimePicker1.Value.ToString();
             obj.Inventory_Unit = textBox1.Text;
+            obj.save();
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource=Model.get_allProducts();
 
-            MessageBox.Show("Name of the Iteam that is added:" + obj.Object_name);
+           /* MessageBox.Show("Name of the Iteam that is added:" + obj.Object_name);
             MessageBox.Show("No of the Item :" + obj.Number);
             MessageBox.Show("Count of the iteam that is added:" + obj.count);
             MessageBox.Show("Price of the iteam that is Added:" + obj.price);
             MessageBox.Show("When the iteam is added:" + obj.date);
-            MessageBox.Show("The inventory Unit:" + obj.Inventory_Unit);
+            MessageBox.Show("The inventory Unit:" + obj.Inventory_Unit);*/
 
 
         }
@@ -73,6 +76,11 @@ namespace Assigment4
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
