@@ -38,6 +38,10 @@ namespace Assigment4
             bool checker_Item=false;
             bool checker_Price = false;
 
+            string Count;
+            string number;
+            string price;
+
             if (string.IsNullOrEmpty(text_ObjectName.Text)){
 
                 errorProvider1.SetError(text_ObjectName, "Name required");
@@ -53,7 +57,21 @@ namespace Assigment4
                 errorProvider1.SetError(txt_Count, "Number required");
             }
 
-            else { errorProvider1.Clear(); obj.count = txt_Count.Text; checker_type = true; }
+            else {
+
+
+                errorProvider1.Clear();
+                try
+                {
+                    Count = txt_Count.Text; checker_type = true; obj.count = Int16.Parse(Count);
+                }
+
+                catch (System.FormatException)
+                {
+                    System.Console.WriteLine("Please enter  a number");
+
+                }
+                }
 
 
             if (string.IsNullOrEmpty(textBox1.Text))
@@ -74,8 +92,17 @@ namespace Assigment4
             else
             {
                 errorProvider1.Clear();
+              
 
-                obj.Number = txt_Number.Text;
+               try
+                {
+                    number = txt_Number.Text;
+                    obj.Number = Int16.Parse(number);
+                }
+                catch (System.FormatException)
+                {
+                    System.Console.WriteLine("Please enter  a number");
+                }
                 checker_Item = true; 
             }
 
@@ -88,7 +115,19 @@ namespace Assigment4
 
             else
             {
-                errorProvider1.Clear();  obj.price = txt_price.Text;
+                errorProvider1.Clear(); 
+               
+
+                try
+                {
+                    price = txt_price.Text;
+                    obj.price = double.Parse(price);
+                }
+                catch (System.FormatException)
+                {
+                    System.Console.WriteLine("Please Enter a Number");
+                }
+
 
                 checker_Price = true;
 
@@ -109,7 +148,7 @@ namespace Assigment4
         obj.date = dateTimePicker1.Value.ToString();
 
 
-
+                
 
 
 

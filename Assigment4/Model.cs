@@ -11,9 +11,9 @@ namespace Assigment4
         static List<Model> l = new List<Model>();
 
         public string Object_name{ get; set; }
-        public string price { get; set; }
-        public  string count { get; set; }
-        public string Number { get; set; }
+        public double price { get; set; }
+        public  double count { get; set; }
+        public double Number { get; set; }
         public string date { get; set; }
         public string Inventory_Unit { get; set; }
 
