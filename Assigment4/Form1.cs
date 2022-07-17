@@ -32,17 +32,98 @@ namespace Assigment4
         {
 
             Model obj = new Model();
-            obj.Number = txt_Number.Text;
-            obj.price = txt_price.Text;
-            obj.Object_name = text_ObjectName.Text;
-            obj.count = txt_Count.Text;
-            obj.date = dateTimePicker1.Value.ToString();
-            obj.Inventory_Unit = textBox1.Text;
-            obj.save();
-            dataGridView1.DataSource = null;
-            dataGridView1.DataSource=Model.get_allProducts();
+            bool checker_name = false;
+            bool checker_type = false;
+            bool checker_Inventory=false;
+            bool checker_Item=false;
+            bool checker_Price = false;
 
-           /* MessageBox.Show("Name of the Iteam that is added:" + obj.Object_name);
+            if (string.IsNullOrEmpty(text_ObjectName.Text)){
+
+                errorProvider1.SetError(text_ObjectName, "Name required");
+                
+            }
+
+            else { errorProvider1.Clear(); obj.Object_name = text_ObjectName.Text; checker_name = true; }
+
+
+            if (string.IsNullOrEmpty(txt_Count.Text))
+            {
+
+                errorProvider1.SetError(txt_Count, "Number required");
+            }
+
+            else { errorProvider1.Clear(); obj.count = txt_Count.Text; checker_type = true; }
+
+
+            if (string.IsNullOrEmpty(textBox1.Text))
+            {
+                errorProvider1.SetError(textBox1, "Inventory required");
+            }
+            else
+            {
+                errorProvider1.Clear();
+                obj.Inventory_Unit = textBox1.Text; checker_Inventory = true;
+            }
+
+
+
+            if (string.IsNullOrEmpty(txt_Number.Text)){
+                errorProvider1.SetError(txt_Number, "Number required");
+            }
+            else
+            {
+                errorProvider1.Clear();
+
+                obj.Number = txt_Number.Text;
+                checker_Item = true; 
+            }
+
+
+            if (string.IsNullOrEmpty(txt_price.Text))
+            {
+                errorProvider1.SetError(txt_price, "price required");
+
+            }
+
+            else
+            {
+                errorProvider1.Clear();  obj.price = txt_price.Text;
+
+                checker_Price = true;
+
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+
+        obj.date = dateTimePicker1.Value.ToString();
+
+
+
+
+
+
+
+
+            if (checker_name==true&&checker_type==true&&checker_Price==true&&checker_Item==true&&checker_Inventory==true)
+            {
+                MessageBox.Show("List Added!!");
+                obj.save();
+                dataGridView1.DataSource = null;
+                dataGridView1.DataSource = Model.get_allProducts();
+            }
+
+           /* 
             MessageBox.Show("No of the Item :" + obj.Number);
             MessageBox.Show("Count of the iteam that is added:" + obj.count);
             MessageBox.Show("Price of the iteam that is Added:" + obj.price);

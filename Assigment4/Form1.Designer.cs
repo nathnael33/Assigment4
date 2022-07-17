@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lbl_number = new System.Windows.Forms.Label();
             this.lbl_Date = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -43,14 +44,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_number
             // 
             this.lbl_number.AutoSize = true;
             this.lbl_number.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.8F);
-            this.lbl_number.Location = new System.Drawing.Point(69, 65);
+            this.lbl_number.Location = new System.Drawing.Point(59, 215);
             this.lbl_number.Name = "lbl_number";
             this.lbl_number.Size = new System.Drawing.Size(141, 39);
             this.lbl_number.TabIndex = 0;
@@ -60,7 +63,7 @@
             // 
             this.lbl_Date.AutoSize = true;
             this.lbl_Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.8F);
-            this.lbl_Date.Location = new System.Drawing.Point(463, 65);
+            this.lbl_Date.Location = new System.Drawing.Point(771, 215);
             this.lbl_Date.Name = "lbl_Date";
             this.lbl_Date.Size = new System.Drawing.Size(90, 39);
             this.lbl_Date.TabIndex = 1;
@@ -68,7 +71,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(383, 118);
+            this.dateTimePicker1.Location = new System.Drawing.Point(697, 277);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(263, 22);
             this.dateTimePicker1.TabIndex = 2;
@@ -78,7 +81,7 @@
             // 
             this.lbl_object_name.AutoSize = true;
             this.lbl_object_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.8F);
-            this.lbl_object_name.Location = new System.Drawing.Point(73, 223);
+            this.lbl_object_name.Location = new System.Drawing.Point(17, 52);
             this.lbl_object_name.Name = "lbl_object_name";
             this.lbl_object_name.Size = new System.Drawing.Size(220, 39);
             this.lbl_object_name.TabIndex = 3;
@@ -86,14 +89,14 @@
             // 
             // txt_Number
             // 
-            this.txt_Number.Location = new System.Drawing.Point(76, 129);
+            this.txt_Number.Location = new System.Drawing.Point(80, 277);
             this.txt_Number.Name = "txt_Number";
             this.txt_Number.Size = new System.Drawing.Size(120, 22);
             this.txt_Number.TabIndex = 4;
             // 
             // text_ObjectName
             // 
-            this.text_ObjectName.Location = new System.Drawing.Point(76, 266);
+            this.text_ObjectName.Location = new System.Drawing.Point(24, 130);
             this.text_ObjectName.Name = "text_ObjectName";
             this.text_ObjectName.Size = new System.Drawing.Size(217, 22);
             this.text_ObjectName.TabIndex = 5;
@@ -103,7 +106,7 @@
             // 
             this.lbl_Count.AutoSize = true;
             this.lbl_Count.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.8F);
-            this.lbl_Count.Location = new System.Drawing.Point(678, 190);
+            this.lbl_Count.Location = new System.Drawing.Point(431, 76);
             this.lbl_Count.Name = "lbl_Count";
             this.lbl_Count.Size = new System.Drawing.Size(109, 39);
             this.lbl_Count.TabIndex = 6;
@@ -111,7 +114,7 @@
             // 
             // txt_Count
             // 
-            this.txt_Count.Location = new System.Drawing.Point(685, 277);
+            this.txt_Count.Location = new System.Drawing.Point(438, 130);
             this.txt_Count.Name = "txt_Count";
             this.txt_Count.Size = new System.Drawing.Size(100, 22);
             this.txt_Count.TabIndex = 7;
@@ -186,6 +189,10 @@
             this.dataGridView1.TabIndex = 14;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -207,9 +214,9 @@
             this.Controls.Add(this.lbl_Date);
             this.Controls.Add(this.lbl_number);
             this.Name = "Form1";
-            this.Text = "la";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,6 +239,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
 
