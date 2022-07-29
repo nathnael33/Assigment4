@@ -16,8 +16,11 @@ namespace Assigment4
         public double Number { get; set; }
         public string date { get; set; }
         public string Inventory_Unit { get; set; }
+        public bool isAvaliable { get; set; }
 
         
+
+
 
         public void save()
         {

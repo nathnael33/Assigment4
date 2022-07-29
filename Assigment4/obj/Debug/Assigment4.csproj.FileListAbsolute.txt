@@ -9,3 +9,4 @@ C:\Users\nathn\source\repos\Assigment4\Assigment4\obj\Debug\Assigment4.csproj.Ge
 C:\Users\nathn\source\repos\Assigment4\Assigment4\obj\Debug\Assigment4.csproj.CoreCompileInputs.cache
 C:\Users\nathn\source\repos\Assigment4\Assigment4\obj\Debug\Assigment4.exe
 C:\Users\nathn\source\repos\Assigment4\Assigment4\obj\Debug\Assigment4.pdb
+C:\Users\nathn\source\repos\Assigment4\Assigment4\obj\Debug\Assigment4.Login.resources

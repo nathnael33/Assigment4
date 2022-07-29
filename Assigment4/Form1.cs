@@ -13,9 +13,11 @@ namespace Assigment4
     public partial class Form1 : Form
     {
 
-        public Form1()
+        public Form1(string name)
         {
             InitializeComponent();
+            label2.Text = name;
+               
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -151,23 +153,51 @@ namespace Assigment4
                 
 
 
-
-
+            
+            obj.isAvaliable = chkProductAvaliable.Checked;
 
             if (checker_name==true&&checker_type==true&&checker_Price==true&&checker_Item==true&&checker_Inventory==true)
             {
-                MessageBox.Show("List Added!!");
-                obj.save();
-                dataGridView1.DataSource = null;
-                dataGridView1.DataSource = Model.get_allProducts();
+              
+                if (obj.isAvaliable == true)
+                {
+                    obj.save();
+                    dataGridView1.DataSource = null;
+                    dataGridView1.DataSource = Model.get_allProducts();
+
+                     string items = " ";
+                     foreach (var iteam in chk_options.CheckedItems)
+                     {
+
+                         items =items+"  "+ iteam.ToString();
+                     }
+
+                     MessageBox.Show(" Delivery Method: "+items);
+
+                   
+                   if( radioButton1.Checked == true)
+                    {
+                        MessageBox.Show("Payment Method :PayPal");
+                    }
+                   else if( radioButton2.Checked == true)
+                    {
+                        MessageBox.Show("Payment Method :TeleBirr");
+
+                    }
+                   else
+                    {
+                        MessageBox.Show("Payment Method :You have not chosen a payement system");
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("not available");
+                }
+               
             }
 
-           /* 
-            MessageBox.Show("No of the Item :" + obj.Number);
-            MessageBox.Show("Count of the iteam that is added:" + obj.count);
-            MessageBox.Show("Price of the iteam that is Added:" + obj.price);
-            MessageBox.Show("When the iteam is added:" + obj.date);
-            MessageBox.Show("The inventory Unit:" + obj.Inventory_Unit);*/
+   
 
 
         }
@@ -203,6 +233,33 @@ namespace Assigment4
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chk_options_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            Hide();
         }
     }
 }
