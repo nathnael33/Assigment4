@@ -10,3 +10,4 @@ C:\Users\nathn\source\repos\Assigment4\Assigment4\obj\Debug\Assigment4.csproj.Co
 C:\Users\nathn\source\repos\Assigment4\Assigment4\obj\Debug\Assigment4.exe
 C:\Users\nathn\source\repos\Assigment4\Assigment4\obj\Debug\Assigment4.pdb
 C:\Users\nathn\source\repos\Assigment4\Assigment4\obj\Debug\Assigment4.Login.resources
+C:\Users\nathn\source\repos\Assigment4\Assigment4\obj\Debug\Assigment4.Main_Container.resources

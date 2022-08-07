@@ -16,7 +16,7 @@ namespace Assigment4
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());// where the application going to start
+            Application.Run(new Main_Container());// where the application going to start
         }
     }
 }

@@ -27,7 +27,7 @@ namespace Assigment4
 
         private void btn_Cancel_Click(object sender, EventArgs e)
         {
-            this.Close();
+            //this.Close();
         }
 
         private void btn_Add_Click(object sender, EventArgs e)
@@ -260,6 +260,27 @@ namespace Assigment4
             Login login = new Login();
             login.Show();
             Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+          
+            var iteam = Model.findone(textBox2.Text);
+            if(iteam== null)
+            {
+                MessageBox.Show("Not Found");
+
+            }
+            else
+            {
+
+                MessageBox.Show("Found");
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

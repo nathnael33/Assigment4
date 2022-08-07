@@ -19,7 +19,7 @@ namespace Assigment4
         public bool isAvaliable { get; set; }
 
         
-
+        
 
 
         public void save()
@@ -33,6 +33,14 @@ namespace Assigment4
         }
 
         public static List<Model> get_allProducts() { return l; }
+
+        public static Model findone(string Name)
+        {
+
+            return l.Find(obj => obj.Object_name == Name);
+
+
+        }
            
 
 

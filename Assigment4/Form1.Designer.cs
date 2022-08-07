@@ -40,7 +40,6 @@
             this.txt_price = new System.Windows.Forms.TextBox();
             this.lbl_Price = new System.Windows.Forms.Label();
             this.btn_Add = new System.Windows.Forms.Button();
-            this.btn_Cancel = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -54,6 +53,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -151,24 +152,13 @@
             // btn_Add
             // 
             this.btn_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.8F);
-            this.btn_Add.Location = new System.Drawing.Point(50, 396);
+            this.btn_Add.Location = new System.Drawing.Point(36, 374);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(116, 46);
             this.btn_Add.TabIndex = 10;
             this.btn_Add.Text = "Add";
             this.btn_Add.UseVisualStyleBackColor = true;
             this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
-            // 
-            // btn_Cancel
-            // 
-            this.btn_Cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.8F);
-            this.btn_Cancel.Location = new System.Drawing.Point(256, 396);
-            this.btn_Cancel.Name = "btn_Cancel";
-            this.btn_Cancel.Size = new System.Drawing.Size(162, 46);
-            this.btn_Cancel.TabIndex = 11;
-            this.btn_Cancel.Text = "Cancel";
-            this.btn_Cancel.UseVisualStyleBackColor = true;
-            this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
             // 
             // label1
             // 
@@ -308,11 +298,32 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(252, 373);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(166, 46);
+            this.button2.TabIndex = 24;
+            this.button2.Text = "Search";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(223, 332);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(235, 22);
+            this.textBox2.TabIndex = 25;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1114, 752);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -323,7 +334,6 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn_Cancel);
             this.Controls.Add(this.btn_Add);
             this.Controls.Add(this.lbl_Price);
             this.Controls.Add(this.txt_price);
@@ -359,7 +369,6 @@
         private System.Windows.Forms.TextBox txt_price;
         private System.Windows.Forms.Label lbl_Price;
         private System.Windows.Forms.Button btn_Add;
-        private System.Windows.Forms.Button btn_Cancel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -373,6 +382,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 

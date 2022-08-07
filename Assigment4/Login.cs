@@ -12,6 +12,7 @@ namespace Assigment4
 {
     public partial class Login : Form
     {
+       
         public Login()
         {
             InitializeComponent();
@@ -27,13 +28,17 @@ namespace Assigment4
            string username = textBox1.Text; 
             string password = textBox2.Text;
 
+           
             if(username=="Admin"&& password == "Admin")
             {
+
+               
+               Form1 screen =new Form1(username);
                 
-                Form1 screen =new Form1(username);
+               // screen.MdiParent = this;
                 screen.Show();
                 MessageBox.Show("Welcome!!");
-                Hide();
+               // Hide();
             }
             else
             {
@@ -42,6 +47,11 @@ namespace Assigment4
 
 
             }
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
