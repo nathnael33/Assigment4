@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Assigment4
 {
-    public partial class Form1 : Form
+    public partial class Form1 : Form 
     {
 
         public Form1(string name)
@@ -33,6 +33,8 @@ namespace Assigment4
         private void btn_Add_Click(object sender, EventArgs e)
         {
 
+
+            
             Model obj = new Model();
             bool checker_name = false;
             bool checker_type = false;
@@ -162,10 +164,11 @@ namespace Assigment4
                 if (obj.isAvaliable == true)
                 {
                     obj.save();
+                  
                     dataGridView1.DataSource = null;
                     dataGridView1.DataSource = Model.get_allProducts();
 
-                     string items = " ";
+                    string items = " ";
                      foreach (var iteam in chk_options.CheckedItems)
                      {
 

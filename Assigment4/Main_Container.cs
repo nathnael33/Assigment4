@@ -72,15 +72,38 @@ namespace Assigment4
 
 
 
-            Form1 login = new Form1(" ");
+            Form1 screen = new Form1(" ");
+            screen.MdiParent = this;
 
-            login.MdiParent = this;
-            login.Show();
+
+            screen.Show();
+           
+            
         }
 
         private void nameToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void addToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            if (ActiveMdiChild != null)
+            {
+
+
+                ActiveMdiChild.Close();
+
+
+            }
+
+
+
+            Showcs screen = new Showcs();
+            screen.MdiParent = this;
+
+
+            screen.Show();
         }
     }
 }

@@ -32,13 +32,12 @@ namespace Assigment4
             if(username=="Admin"&& password == "Admin")
             {
 
-               
-               Form1 screen =new Form1(username);
-                
-               // screen.MdiParent = this;
-                screen.Show();
+               Main_Container main_Container = new Main_Container();
+                Hide();
+                main_Container.Show();
+           
                 MessageBox.Show("Welcome!!");
-               // Hide();
+               
             }
             else
             {
