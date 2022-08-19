@@ -36,13 +36,18 @@ namespace Assigment4
                 userControl.product_name = iteam.Object_name;
                 userControl.price = iteam.price;
                 userControl.count = iteam.count;
-                userControl.number = iteam.Number;
-                userControl.date = iteam.date;
-                userControl.iventory_unit = iteam.Inventory_Unit;
-                /*userControl.Click += (Object o, EventArgs e1) =>
+              
+                userControl.Click += (Object o, EventArgs e1) =>
                 {
-                    MessageBox.Show("Name =" + userControl.product_name);
-                };*/
+                    Table_Layoutcs table_Layoutcs = new Table_Layoutcs();
+                    table_Layoutcs.number = iteam.Number;
+                    table_Layoutcs.date = iteam.date;
+                    table_Layoutcs.iventory_number = iteam.Inventory_Unit;
+                    Hide();
+                    table_Layoutcs.Show();
+                    
+                   // MessageBox.Show("Name =" + userControl.product_name);
+                };
                 
                 //userControl.Click+= label1_Click;
                 panel1.Controls.Add(userControl);
@@ -66,6 +71,16 @@ namespace Assigment4
         private void button1_Click(object sender, EventArgs e)
         {
             panel1.BackColor = Color.Green;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            panel1.BackColor= Color.Red;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            panel1.BackColor=Color.Blue;
         }
     }
 }

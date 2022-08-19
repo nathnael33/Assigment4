@@ -30,10 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -58,17 +55,6 @@
             this.label2.Text = "Count";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.8F);
-            this.label3.Location = new System.Drawing.Point(5, 191);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 29);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Number";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -79,38 +65,15 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Price";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.8F);
-            this.label5.Location = new System.Drawing.Point(3, 255);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 29);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Date";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.8F);
-            this.label6.Location = new System.Drawing.Point(3, 314);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(168, 29);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Inventory Unit";
-            // 
             // UserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(335, 376);
+            this.Size = new System.Drawing.Size(685, 185);
             this.Load += new System.EventHandler(this.UserControl1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -121,9 +84,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
     }
 }

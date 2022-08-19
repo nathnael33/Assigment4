@@ -41,26 +41,8 @@ namespace Assigment4
             set { Count = value;label2.Text = value.ToString(); }
         }
 
-        private double Number;
-        public double number
-        {
-            get { return Number; }
-            set { Number = value; label3.Text = value.ToString(); }
-        }
-
-        private string Date;
-        public string date
-        {
-            get { return Date; }
-            set { Date = value; label5.Text = value.ToString(); }
-        }
-        private string Iventory_Unit;
-        public string iventory_unit
-        {
-            get { return Iventory_Unit; }
-            set { Iventory_Unit = value; label5.Text = value.ToString(); }
-        }
-
+       
+       
         private void UserControl1_Load(object sender, EventArgs e)
         {
 
