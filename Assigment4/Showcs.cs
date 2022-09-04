@@ -40,13 +40,12 @@ namespace Assigment4
                 userControl.Click += (Object o, EventArgs e1) =>
                 {
                     Table_Layoutcs table_Layoutcs = new Table_Layoutcs();
-                    table_Layoutcs.number = iteam.Number;
+                   // table_Layoutcs.number = iteam.Number;
                     table_Layoutcs.date = iteam.date;
                     table_Layoutcs.iventory_number = iteam.Inventory_Unit;
                     Hide();
                     table_Layoutcs.Show();
-                    
-                   // MessageBox.Show("Name =" + userControl.product_name);
+                   
                 };
                 
                 //userControl.Click+= label1_Click;

@@ -67,7 +67,7 @@ namespace Assigment4
                 errorProvider1.Clear();
                 try
                 {
-                    Count = txt_Count.Text; checker_type = true; obj.count = Int16.Parse(Count);
+                    Count = txt_Count.Text; checker_type = true; obj.count = Count;
                 }
 
                 catch (System.FormatException)
@@ -75,7 +75,7 @@ namespace Assigment4
                     System.Console.WriteLine("Please enter  a number");
 
                 }
-                }
+            }
 
 
             if (string.IsNullOrEmpty(textBox1.Text))
@@ -96,12 +96,12 @@ namespace Assigment4
             else
             {
                 errorProvider1.Clear();
-              
 
-               try
+
+                try
                 {
                     number = txt_Number.Text;
-                    obj.Number = Int16.Parse(number);
+                    obj.Number = number;
                 }
                 catch (System.FormatException)
                 {
@@ -119,21 +119,21 @@ namespace Assigment4
 
             else
             {
-                errorProvider1.Clear(); 
-               
+                errorProvider1.Clear();
+
 
                 try
                 {
                     price = txt_price.Text;
-                    obj.price = double.Parse(price);
+                    obj.price = price;
                 }
                 catch (System.FormatException)
                 {
                     System.Console.WriteLine("Please Enter a Number");
-                }
+                    }
 
 
-                checker_Price = true;
+                    checker_Price = true;
 
 
 
@@ -164,9 +164,10 @@ namespace Assigment4
                 if (obj.isAvaliable == true)
                 {
                     obj.save();
-                  
+
+                   
                     dataGridView1.DataSource = null;
-                    dataGridView1.DataSource = Model.get_allProducts();
+                    dataGridView1.DataSource = obj.get_allproducts1();
 
                     string items = " ";
                      foreach (var iteam in chk_options.CheckedItems)

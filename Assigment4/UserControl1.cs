@@ -25,8 +25,8 @@ namespace Assigment4
            set { Product_Name = value;label1.Text = value; }   
         }
 
-        private double Price;
-        public double price
+        private string Price;
+        public string price
         {
             get { return Price; }
             set { Price = value;label4.Text = value.ToString(); }
@@ -34,8 +34,8 @@ namespace Assigment4
 
         }
 
-        private double Count;
-        public double count
+        private string Count;
+        public string count
         {
             get { return Count; }
             set { Count = value;label2.Text = value.ToString(); }

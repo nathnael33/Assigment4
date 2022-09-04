@@ -14,3 +14,4 @@ C:\Users\nathn\source\repos\Assigment4\Assigment4\obj\Debug\Assigment4.Main_Cont
 C:\Users\nathn\source\repos\Assigment4\Assigment4\obj\Debug\Assigment4.UserControl1.resources
 C:\Users\nathn\source\repos\Assigment4\Assigment4\obj\Debug\Assigment4.Showcs.resources
 C:\Users\nathn\source\repos\Assigment4\Assigment4\obj\Debug\Assigment4.Table_Layoutcs.resources
+C:\Users\nathn\source\repos\Assigment4\Assigment4\obj\Debug\Assigment4.TestDBcs.resources
